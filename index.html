@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Empty Example</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+	<header></header>
+
+	<div id="question" class="question">Share your opinion about 2016 presidential election.</div>
+
+	<div id="chatContent" class="chatContent">
+		<div class="commentNumContainer">
+			<h5>Comments</h5>
+			<div id="commentNum"></div>
+		</div>
+		
+		<div id="user_1stComment_container" class="commentContainer" style="display: none;">
+			<img src="img/profile.jpg" alt="profile-photo" class="inline_c">
+			<div class="inline_c commentStyle"><h6>YOU</h6><br/><p id="userComment"></p></div>
+		</div>
+
+		<div id="trolls">
+			<div id="troll_1" class="commentContainer" style="display: none;">
+				<img src="img/profile5.jpg" alt="profile-photo" class="inline_c">
+				<div class="inline_c commentStyle">
+					<h6>Freedomthinker forever</h6><br/>
+					<p>Trump will win. Then the left wing liberials world will fall apart. Hopefully Trump will pursue the Clinton's both of them all the way to jail. Would love to see the new Clinton's orange.</p>
+				</div>
+			</div>
+			<div id="troll_2" class="commentContainer" style="display: none;">
+				<img src="img/profile4.jpg" alt="profile-photo" class="inline_c">
+				<div class="inline_c commentStyle">
+					<h6>Truth Justice and The American way</h6><br/>
+					<p> PRISON is the future for Hillary. Anyone who votes for this wench is either being paid or stupid as all fuck. Blocking her evil path is a HERO named TRUMP! :) <span style="color: #3cb0fd">#hillaryforprison</span></p>
+				</div>
+			</div>
+			<div id="troll_3" class="commentContainer" style="display: none;">
+				<img src="img/profile2.jpg" alt="profile-photo" class="inline_c">
+				<div class="inline_c commentStyle">	
+					<h6>Bicycle sunday</h6><br/>
+					<p>Holy Crap~ <br/>hahahahahahahahahahahahahahahahahahaaha</p>
+				</div>
+			</div>
+			
+			<div id="troll_4" class="commentContainer" style="display: none;">
+				<img src="img/profile3.jpg" alt="profile-photo" class="inline_c">
+				<div class="inline_c commentStyle">	
+					<h6>Hans Blitz</h6><br/>
+					<p>this woman should be in jail She gave me cancer. <br/>Lock her up...</p>
+				</div>
+			</div>
+		</div>
+		
+		<div id="user_2ndComment_container" class="commentContainer" style="display: none;">
+			<img src="img/profile.jpg" alt="profile-photo" class="inline_c">
+			<div class="inline_c commentStyle"><h6>YOU</h6><br/><p id="userComment2"></p></div>
+		</div>
+
+	</div>
+
+	<dir></dir>
+
+	<form id="message" class="formContainer" name="message" action="" style="display: block;">
+		<img src="img/profile.jpg" alt="profile-photo">
+        <textarea placeholder="Add your comment." id="usermsg" class="usermsg_style"/></textarea>
+
+        <div id="buttons" style="display: none">
+       		<input name="cancelmsg" type="button" value="cancel" id="cancelmsg" class="button_style"/>
+       		<input name="commentmsg" type="button" value="comment" id="commentmsg" class="button_style"/>
+        </div>
+    </form>
+        
+	<form id="message_2" class="formContainer" name="message_2" action="" style="display: none">        
+        <img src="img/profile.jpg" alt="profile-photo">
+        <textarea placeholder="Add your comment." id="usermsg_2" class="usermsg_style"/></textarea>
+        
+        <div id="buttons_2">
+        	<input name="cancelmsg_2" type="button" value="cancel" id="cancelmsg_2" class="button_style"/>
+        	<input name="commentmsg_2" type="button" value="comment" id="commentmsg_2" class="button_style"/>
+        </div>
+    	<input name="checkmsg_2" type="button" value="check" id="checkmsg_2" style="display: none"/>
+
+    </form>
+
+    <div id="modifyModal" style="display: none;">
+		<div class="modalBox">
+			<form id="modifyMessage_2" name="checkmessage_2" action="">
+	    		<textarea onkeyup="adjust_textarea(this)" value="" id="usermsg_2_modify"/></textarea>
+	    		<div id="buttons_3">
+	    			<input name="cancelPost" type="button" value="cancel" id="cancelPost" class="button_style_white"/>
+	         		<input name="confirmPost" type="button" value="confirm" id="confirmPost" class="button_style_white"/>
+	        	</div>
+	        </form>    	
+	    	<div id="modifyText">
+	    		<h4>Words found in your sentences:</h4>
+	    		<div class="wordRank inline_t">
+	    			<img src="img/red-3.png" alt="3 red circle" class="rankPic"><br/>
+	    			<img src="img/red-1.png" alt="3 red circle" class="rankPic"><br/>
+	    			<img src="img/red-3.png" alt="3 red circle" class="rankPic"><br/>
+	    			<img src="img/red-4.png" alt="3 red circle" class="rankPic"><br/>
+	    		</div>
+	    		<div id="textFound" class="textFoundContainer inline_t">
+	    			<p>mess<br/>
+	    			waste<br/>
+	    			fat<br/>
+	    			big fat mistake</p>
+	    		</div>
+
+	    		<h5>Consider different words related to different feelings and emotions. <br/>It would be great if you adjust your words a little before you post.</h5>
+	    	
+	    	</div>
+    	</div>
+    </div>
+
+		<footer></footer>
+
+	<script type="text/javascript">
+		//auto expand textarea
+		function adjust_textarea(h) {
+    		h.style.height = "40px";
+    		h.style.height = (h.scrollHeight)+"px";
+		}
+	</script>	
+
+	<script type="text/javascript" src="scripts/main-script.js" async></script>
+<!-- 	<script type="text/javascript" src="scripts/jquery.js" async></script> -->
+<!-- 	<script type="text/javascript" src="scripts/app.js" async></script>
+</body>
+</html>
